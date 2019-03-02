@@ -1,10 +1,9 @@
-# LeetCode-java
-Welcome to Welcome to my LeetCode repository. 
-This shows my Java solutions for [LeetCode Online Judge](http://oj.leetcode.com/).
+# N皇后
 
-## My Environment
-* jdk1.8.0_66 （Minimum JDK Version >= 1.6）
-* IntelliJ IDEA
-
-## Considerations
-If you have any questions or suggestions, please ask them or send me an email at 494456818@qq.com.
+## 解题思路
+1. 使用三个数组，分别记录第i列是否存在皇后，第i条主对角线是否存在皇后以及第i条副对角线是否存在皇后
+通过图片可知，存在规律：
+* N\*N矩阵的对角线条数为 2\*n-1条
+* 同一对角线上的编号相同
+2. 查找每一行中，皇后可以存放在哪一列；
+3. 当查找到最后一行时，切皇后满足放置条件，找到一组解。
