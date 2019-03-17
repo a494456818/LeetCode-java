@@ -16,7 +16,7 @@ public class Solution {
         if (nums == null || nums.length == 0)
             return root;
         root = buildMaxBinaryTree(0, nums.length - 1, nums);
-        return root` `;
+        return root;
     }
 
     // 从nums[l,r]寻找最大值构建子树
@@ -33,5 +33,4 @@ public class Solution {
         root.right = buildMaxBinaryTree(maxIndex + 1, r, nums);
         return root;
     }
-
 }
