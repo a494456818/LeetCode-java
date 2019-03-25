@@ -1,3 +1,11 @@
+/**
+ * 解题思路：
+ *  由于需要找到x,y,z使得x+y+z=target，只要找到x,y,z即可，顺序并不重要。
+ *  对于x+y+z==target，主要存在三种情况：
+ *      1. a==b==c ： a,b,c相等，所有的组合数量为：C_n^3（n为等于a的数量）
+ *      2. a==b!=c ： 有两个数相等，所有的组合数量为：C_n^2 * m (n为等于a的数量，m为c的数量)
+ *      3. a<b && b<c ：值为a的数量*b的数量*c的数量
+ */
 class Solution1 {
     public static int threeSumMulti(int[] A, int target) {
         long res = 0;
