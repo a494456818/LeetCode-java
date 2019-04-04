@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * 动态规划
  * 状态：memo[i] : 表示数组从[0,i]中能够找到的连续最大值sum(x,i)，x=[0,i]
