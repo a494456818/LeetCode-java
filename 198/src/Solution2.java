@@ -14,15 +14,14 @@ public class Solution2 {
 
         for (int i = 0; i < n; i++)
             for (int j = i; j >= 0; j--) {
-                memo[i] = Math.max(memo[i], nums[i] + (i - 2 >= 0 ? memo[i - 2] : 0));
+                memo[i] = Math.max(memo[i], nums[j] + (j - 2 >= 0 ? memo[j - 2] : 0));
             }
         return memo[n - 1];
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution2 solution = new Solution2();
         int res = solution.rob(new int[]{2, 7, 9, 3, 1});
         System.out.println(res);
     }
-
 }
