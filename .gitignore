@@ -1,0 +1,12 @@
+#####################
+# Java Ignore files #
+#####################
+*.class
+
+##########################
+# Jetbrains Ignore files #
+##########################
+*.iml
+.idea/
+.out/
+*.kotlin_module
